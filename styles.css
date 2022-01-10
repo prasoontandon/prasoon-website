@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0px 0px;
+    font-family: 'Playfair Display', sans-serif;
+}
+h2{
+    font-weight: 700;
+    text-decoration: underline;
+    color: #FFA500;
+}
+h3{color: #FFFF;}
+p{
+    color: #FF4500;
+    font-weight: 400;
+}
+img{width: 75px;}
+body{
+    background: linear-gradient(to right, #9cecfb, #65c7f7, #0052d4);
+}
+
+/* ---------------------------------- */
+/* NAVBAR */
+/* ---------------------------------- */
+
+navbar{
+    background: linear-gradient(to right, #9cecfb, #65c7f7, #0052d4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 15vh;
+    width: 100%;
+}
+navbar #HomeButton{
+    margin-left: 10px;
+    align-self: flex-end;
+}
+navbar #HomeButton a:link, navbar #HomeButton a:visited{
+    text-decoration: none;
+}
+navbar #HomeButton a:hover{
+    text-decoration: underline;
+    text-decoration-color: #FFA500;
+    text-decoration-thickness: 3px;   
+}
+navbar #HomeButton a h2{
+    font-family: 'Brush Script MT', 'Courier New';
+    font-style: italic;
+    font-size: 60px;
+    text-decoration: none;
+}
+navbar #MenuElements ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+navbar ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 15px;
+}
+navbar ul li span{opacity: 0;}
+navbar img{
+    width: 50px;
+    height: 50px;
+}
+navbar img:hover{
+    transform: scale(1.1);
+}
+navbar ul li:hover span{
+    opacity: 1;
+    color: #FFFF;
+}
+
+/* ---------------------------------- */
+/* About Me Seciton */
+/* ---------------------------------- */
+
+.AboutMeSection{
+    background: url(imgs/bascomHall.jpeg);
+    background-size: cover;
+}
+.AboutMeSection #Intro{
+    background: rgba(0,0,139,0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  
+    align-items: center; 
+    margin: 15vh 0vh 0.25em 0vh;
+    padding: 3px 15px;
+    height: 85vh;
+}
+#Intro #About{
+    display: flex;
+    flex-direction: column;   
+    height: 50vh;
+    text-align: center;
+}
+#UW-Madison{color: #FF0000;}
+#Intro #IntroButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+}
+#IntroButtons a{
+    text-decoration:none;
+    color: #FFA500;
+}
+#IntroButtons .btn{
+    background-color: transparent;
+    border: 2px solid #FFA500; 
+    padding: 15px 32px;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 200px;
+    font-size: 18px;
+}
+#IntroButtons .btn:hover{
+    background-color: rgba(0,0,139,1);
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+.AboutMeSection h2{flex-grow: 1;}
+.AboutMeSection p{
+    flex-grow: 1.5;
+    color: #FFFF; 
+}
+
+/* ---------------------------------- */
+/* Languages */
+/* ---------------------------------- */
+
+.Languages {
+    background: #000080;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 15px;
+    text-align: center;
+    margin-bottom: 0.25em; 
+}
+.LanguageLogos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LanguageLogos img{padding: 3px 15px;}
+.LanguageLogos img:hover{
+    transform: scale(1.2);
+    transition-duration: 0.30s;
+}
+
+/* ---------------------------------- */
+/* Tools */
+/* ---------------------------------- */
+
+.Tools{
+    background: #00008B;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3px 15px;
+    margin-bottom: 0.25em; 
+}
+.ToolsLogos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ToolsLogos img{padding: 9px 15px;}
+.ToolsLogos img:nth-of-type(5n){
+    width: 120px;
+}
+.ToolsLogos img:hover{
+    transform: scale(1.2);
+    transition-duration: 0.30s;
+}
+
+/* ---------------------------------- */
+/* Projects */
+/* ---------------------------------- */
+
+.Projects{
+    background: #000080;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3px 15px;
+    height: 80vh;
+    margin-bottom: 0.25em;
+}
+.Projects div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Projects h2{text-align: center;}
+.Projects h3{font-style: italic;}
+.Projects div p span{
+    color: #FFA500;
+    font-weight: bold;
+}
+.Projects p{display: block;}
+.Projects div:nth-of-type(2n) h3, .Projects div:nth-of-type(2n) p{
+    text-align: end;
+}
+
+/* ---------------------------------- */
+/* Work Experience */
+/* ---------------------------------- */
+
+.WorkExperience{
+    background: #00008B;
+    text-align: center;
+    height: 35vh;
+    margin-bottom: 0.25em;
+}
+.WorkExperience h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.WorkExperience .Companies{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 8px 12px;
+}
+.WorkExperience .Companies div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    padding: 3px 15px;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.15);
+}
+.WorkExperience .Companies div img{
+    width: 35%;
+    height: 60%;
+}
+
+/* ---------------------------------- */
+/* Activities and Interests */
+/* ---------------------------------- */
+
+.ActivitesAndInterests{
+    background: #000080;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70vh;
+    margin-bottom: 0.25em;
+}
+.WiscClubs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 900px;
+}
+.ActivitesAndInterests h2{
+    text-align: center;
+    padding: 3px 15px;
+    margin-bottom: 30px;
+}
+.ClubNode {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #0000;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+}
+.ClubNode .imgBack{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.ClubNode .imgBack img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.ClubNode:hover .imgBack img{opacity: 0;}
+.ClubNode .Clubcontent{
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height: 70px;
+    background: #FFFF;
+    transition: 0.5s;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.ClubNode:hover .Clubcontent{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+.ClubNode .Clubcontent h3{
+    text-align: center;
+    color: #000;
+    font-style: bold;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+.ClubNode .Clubcontent p{
+    line-height: 1.2em;
+    transition: 0.5s;
+    text-align: justify;
+    color: 	#008080;
+}
+.ClubNode:hover .Clubcontent {opacity: 1;}
+
+/* ---------------------------------- */
+/* Footer*/
+/* ---------------------------------- */
+
+footer{
+    text-align: center;
+    color: #FFFF;
+}
+.ContactInformation{background-color: #273be2;}
+.ContactInformation h2{
+    padding: 5px 15px;
+    text-align: center;
+}
+.ContactInformation ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 0.5em;
+    color: #0000;
+}
+.ContactInformation ul li a:link, .ContactInformation ul li a:visited{
+    color: #FFA500;
+    text-decoration: none;  
+}
+.ContactInformation ul li a:hover{text-decoration: underline;}
